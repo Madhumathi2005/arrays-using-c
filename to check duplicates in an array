@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main(){
+    int limit,d=0;
+    printf("ENTER THE LIMIT OF THE ARRAY : ");
+    scanf("%d",&limit);
+    int a[limit];
+    printf("ENTER THE ELEMENTS OF THE ARRAY : \n");
+    for(int i=0;i<limit;i++){
+        scanf("%d",&a[i]);
+    }
+    for(int i=0;i<limit;i++){
+        for(int j=i+1;j<limit;j++){
+            if(a[i]==a[j]){
+                d++;
+            }
+        }
+    }
+    if(d>0){
+        printf("Yes");
+    }
+    else{
+        printf("No");
+    }
+}
