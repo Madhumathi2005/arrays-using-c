@@ -16,9 +16,11 @@ void main(){
         }
     }
     if(d>0){
-        printf("Yes");
+        printf("DUPLICATE FOUND\n");
+        printf("NUMBER OF ELEMENTS FOUND DUPLICATE : %d",d);
     }
     else{
-        printf("No");
+        printf("NO DUPLICATE FOUND\n");
     }
+   
 }
